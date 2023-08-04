@@ -1,0 +1,91 @@
+
+<form id="camposPessoaJuridica" data-formPessoaJuridica>
+  <div class="grid gap-4 grid-cols-2 mb-5">
+    <div class="flex flex-col">
+      <label>Nome</label>
+      <input name="razaoSocial" class="input" type="text" placeholder="Insira o nome" />
+    </div>
+    <div class="flex flex-col">
+      <label class="form-label">CPF</label>
+      <input class="input cnpj" name="cnpj"  type="text" placeholder="Insira o CPF" />
+    </div>
+  </div>
+
+  <div class="grid gap-4 grid-cols-2 mb-5">
+    <div class="flex flex-col">
+      <label class="form-label">Email</label>
+      <input name="email" id="email" class="input" type="email"  placeholder="Insira o email"/>
+    </div>
+    <div class="flex flex-col">
+      <label class="form-label">Telefone / Celular</label>
+      <input type="text" name="telefone" class="input phone"   placeholder="Insira o telefone"/>
+    </div>
+  </div>
+
+  
+  <div class="grid gap-4 grid-cols-3 mb-5">
+    <div class="flex flex-col">
+      <label class="form-label">Cep</label>
+      <input id="cep" name="cep" class="input cep" type="text"  placeholder="CEP" />
+    </div>
+    <div class="flex flex-col">
+      <label class="form-label">Rua</label>
+      <input name="logradouro" class="input" type="text" placeholder="Rua"/>
+    </div>
+    <div class="flex flex-col">
+      <label class="form-label">Número</label>
+      <input name="numero" class="input" type="text" placeholder="N°" />
+    </div>
+  </div>
+
+  <div class="grid gap-4 grid-cols-4 mb-5">
+    <div class="flex flex-col">
+      <label class="form-label">Complemento</label>
+      <input name="complemento" class="input" type="text" placeholder="Complemento" />
+    </div>
+    <div class="flex flex-col">
+      <label class="form-label">Bairro</label>
+      <input name="bairro" class="input" type="text" placeholder="Bairro" />
+    </div>
+    <div class="flex flex-col">
+      <label class="form-label">Cidade</label>
+      <input name="cidade" class="input" type="text" placeholder="Cidade" />
+    </div>
+    <div class="flex flex-col">
+      <label class="form-label">UF:</label>
+      <select class="input" aria-label="Default select example" name="uf">
+        <option value="" selected disabled>Selecione a UF</option>
+        <option value="AC">Acre (AC)</option>
+        <option value="AL">Alagoas (AL)</option>
+        <option value="AP">Amapá (AP)</option>
+        <option value="AM">Amazonas (AM)</option>
+        <option value="BA">Bahia (BA)</option>
+        <option value="CE">Ceará (CE)</option>
+        <option value="DF">Distrito Federal (DF)</option>
+        <option value="ES">Espírito Santo (ES)</option>
+        <option value="GO">Goiás (GO)</option>
+        <option value="MA">Maranhão (MA)</option>
+        <option value="MT">Mato Grosso (MT)</option>
+        <option value="MS">Mato Grosso do Sul (MS)</option>
+        <option value="MG">Minas Gerais (MG)</option>
+        <option value="PA">Pará (PA)</option>
+        <option value="PB">Paraíba (PB)</option>
+        <option value="PR">Paraná (PR)</option>
+        <option value="PE">Pernambuco (PE)</option>
+        <option value="PI">Piauí (PI)</option>
+        <option value="RJ">Rio de Janeiro (RJ)</option>
+        <option value="RN">Rio Grande do Norte (RN)</option>
+        <option value="RS">Rio Grande do Sul (RS)</option>
+        <option value="RO">Rondônia (RO)</option>
+        <option value="RR">Roraima (RR)</option>
+        <option value="SC">Santa Catarina (SC)</option>
+        <option value="SP">São Paulo (SP)</option>
+        <option value="SE">Sergipe (SE)</option>
+        <option value="TO">Tocantins (TO)</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="px-4 py-3 bg-emerald-700 text-gray-100 mt-5 rounded-md hover:bg-emerald-800 " type="submit">Cadastrar</button>
+
+</form>

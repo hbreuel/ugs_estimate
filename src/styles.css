@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .input {
+        @apply border-2 border-gray-300 focus:border-emerald-800/50 focus:outline-none focus:ring-1 focus:ring-emerald-600/50 rounded-md p-3;
+    }
+
+    label {
+        @apply mb-2
+    }
+    
+}
+

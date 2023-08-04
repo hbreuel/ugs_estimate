@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-item {
+        @apply py-3 px-3 rounded cursor-pointer text-base hover:bg-emerald-800 mb-1
+    }
+
+    .active {
+        @apply bg-emerald-800
+    }
+
+}

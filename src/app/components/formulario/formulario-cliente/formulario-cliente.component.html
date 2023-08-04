@@ -1,0 +1,21 @@
+<section class="h-full">
+  <div
+    class="h-40 bg-gray-300 flex items-center shadow-sm shadow-gray-200 px-14 text-[40px] text-zinc-800 border-b-2 border-zinc-300"
+  >
+    <h1>Cadastrar cliente</h1>
+  </div>
+
+  <div class="px-10 mt-8">
+    <div class="flex w-56 justify-between">
+      <button  (click)="tipoFormPessoaFisica()" name="btnPessoaFisica"  class="px-6 py-3 border-2 text-emerald-700 rounded-md border-emerald-700 ho hover:bg-emerald-700 hover:text-gray-100">Física</button>
+      <button (click)="tipoFormPessoaJuridica()" name="btnPessoaJuridica" class="px-6 py-3 border-2 text-emerald-700 rounded-md border-emerald-700 ho hover:bg-emerald-700 hover:text-gray-100">Jurídica</button>
+    </div>
+    
+    <div id="formulario" class="mt-8">
+      <app-formulario-pessoa-fisica *ngIf="tipoForm === 'pessoaFisica'"></app-formulario-pessoa-fisica>
+      <app-formulario-pessoa-juridica *ngIf="tipoForm === 'pessoaJuridica'"></app-formulario-pessoa-juridica>
+      
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,51 @@
+<section class="h-full">
+  <div
+    class="h-40 bg-gray-300 flex items-center shadow-sm shadow-gray-200 px-14 text-[40px] text-zinc-800 border-b-2 border-zinc-300"
+  >
+    <h1>Gerar Orçamento</h1>
+  </div>
+
+  <div class="px-10" >
+    <div id="formulario" class="mt-8">
+        <form class="flex flex-col" action="">
+            <label for="buscarCliente">Cliente:</label>
+            <div>
+                <input class="input w-[20%]" type="text" placeholder="Buscar cliente">
+                <i class="bi bi-search bg-emerald-700 text-white py-4 rounded-md px-5 ms-3 cursor-pointer"></i>
+            </div>
+        </form>
+
+        <form class="mt-8 " action="">
+            <div class="grid grid-cols-4 gap-8">
+                <div class="flex flex-col">
+                    <label for="alturaDaParede" class="">Altura da parede:</label>
+                    <input type="text" class="input"  name="alturaDaParede" id="alturaDaParede" placeholder="Insira a altura da parede em metros">
+                </div>
+                <div class="flex flex-col">
+                    <label for="larguraDaParede" class="">Largura da parede:</label>
+                    <input type="text" class="input" name="larguraDaParede" id="larguraDaParede" placeholder="Insira a largura da parede em metros">
+                </div>
+                <div class="flex flex-col">
+                    <label for="">Tem cantoneira?</label>
+                    <select class="input" name="" id="">
+                        <option selected value="sim">Não</option>
+                        <option value="nao">Sim</option>
+                    </select>
+                </div>
+                <div class="flex flex-col"> 
+                    <label for="">Lados cantoneira</label>
+                    <select class="input" name="" id="">
+                        <option value="">Não</option>
+                        <option value="">Ambos</option>
+                        <option value="">Esquerdo</option>
+                        <option value="">Direito</option>
+                    </select>
+                </div>
+            </div>
+            <button class="px-4 py-3 bg-emerald-700 text-gray-100 mt-8 rounded-md hover:bg-emerald-800" type="submit">Gerar Orçamento</button>
+        </form>
+    </div>
+  </div>
+  
+
+</section>

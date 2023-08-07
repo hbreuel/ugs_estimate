@@ -7,9 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+
+
+    
+
+  }
+  
 
   ngOnInit(): void {
   }
 
+   exibirNav() {
+    const nav = document.querySelector("#nav");
+    nav?.classList.toggle("left-0")
+  
+     window.location.href
+  
+   }
+  
+
+
+
+
 }
+
+
+

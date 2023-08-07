@@ -10,4 +10,55 @@
 <body class=" font-[Poppins] ">
   <app-root></app-root>
 </body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+
+
+
+
+    $(document).ready(function() {
+    // Seu código JavaScript aqui
+
+    $('.date').mask('00/00/0000');
+    $('.time').mask('00:00:00');
+    $('.date_time').mask('00/00/0000 00:00:00');
+    $('.cep').mask('00000-000');
+    $('.phone').mask('(00) 00000-0000');
+    $('.phone_with_ddd').mask('(00) 0000-0000');
+    $('.phone_us').mask('(000) 000-0000');
+    $('.mixed').mask('AAA 000-S0S');
+    $('.cpf').mask('000.000.000-00', {reverse: false});
+    $('.cnpj').mask('00.000.000/0000-00', {reverse: false});
+    $('.money').mask('000.000.000.000.000,00', {reverse: true});
+    $('.money2').mask("#.##0,00", {reverse: true});
+  })
+
+  var currentUrl = window.location.pathname; // Obtém a URL atual
+
+  $('.side-nav ul li a').each(function() {
+    var linkUrl = $(this).attr('href');
+
+    if (linkUrl === currentUrl) {
+      $(this).addClass('active');
+    }
+  });
+
+  $('.sidebar ul li a').each(function() {
+    var linkUrl = $(this).attr('href');
+
+    if (linkUrl === currentUrl) {
+      $(this).addClass('active');
+    }
+  });
+
+
+
+</script>
 </html>

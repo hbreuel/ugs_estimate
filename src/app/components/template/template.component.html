@@ -1,4 +1,6 @@
-<div class="h-full fixed w-60 bg-emerald-900 text-gray-100">
+<button (click)="exibirNav()" class="fixed top-14 right-10 lg:hidden"><i class="bi bi-list text-[36px] text-emerald-800 hover:text-emerald-700  px-2"></i></button>
+
+<div id="nav" class="h-full fixed left-[-250px] lg:left-0 bg-emerald-900 w-60 text-gray-100 transition-all">
   <div class="text-[24px] flex items-center mt-8 p-6 mb-3 cursor-pointer">
     <i class="bi bi-app-indicator"></i>
     <h1 class="ps-4">Estimate</h1>
@@ -18,7 +20,7 @@
         </li>
         <li routerLink="/produtos" routerLinkActive="active" class="nav-item">
             <i class="bi bi-box-seam-fill pe-3 text-[20px]"></i>
-            <span class="text-lg">Produtos  </span>
+            <span class="text-lg">Produtos</span>
         </li>
 
     </ul>

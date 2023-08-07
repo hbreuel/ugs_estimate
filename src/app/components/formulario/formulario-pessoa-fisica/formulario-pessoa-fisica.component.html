@@ -1,24 +1,24 @@
 
-<form id="camposPessoaJuridica" data-formPessoaJuridica>
+<form (submit)="cadastrarPessoaFisica()" id="formPessoaFisica">
   <div class="grid gap-4 grid-cols-2 mb-5">
     <div class="flex flex-col">
       <label>Nome</label>
-      <input name="razaoSocial" class="input" type="text" placeholder="Insira o nome" />
+      <input name="razaoSocial" class="input" type="text" placeholder="Insira o nome" [(ngModel)]="cliente.nome" />
     </div>
     <div class="flex flex-col">
       <label class="form-label">CPF</label>
-      <input class="input cnpj" name="cnpj"  type="text" placeholder="Insira o CPF" />
+      <input class="input cnpj" name="cnpj"  type="text" placeholder="Insira o CPF" [(ngModel)]="cliente.cpf"/>
     </div>
   </div>
 
   <div class="grid gap-4 grid-cols-2 mb-5">
     <div class="flex flex-col">
       <label class="form-label">Email</label>
-      <input name="email" id="email" class="input" type="email"  placeholder="Insira o email"/>
+      <input name="email" id="email" class="input" type="email"  placeholder="Insira o email" [(ngModel)]="cliente.email"/>
     </div>
     <div class="flex flex-col">
       <label class="form-label">Telefone / Celular</label>
-      <input type="text" name="telefone" class="input phone"   placeholder="Insira o telefone"/>
+      <input type="text" name="telefone" class="input phone"   placeholder="Insira o telefone" [(ngModel)]="cliente.telefone"/>
     </div>
   </div>
 
@@ -26,34 +26,34 @@
   <div class="grid gap-4 grid-cols-3 mb-5">
     <div class="flex flex-col">
       <label class="form-label">Cep</label>
-      <input id="cep" name="cep" class="input cep" type="text"  placeholder="CEP" />
+      <input id="cep" name="cep" class="input cep" type="text"  placeholder="CEP" [(ngModel)]="cliente.endereco.cep" />
     </div>
     <div class="flex flex-col">
       <label class="form-label">Rua</label>
-      <input name="logradouro" class="input" type="text" placeholder="Rua"/>
+      <input name="logradouro" class="input" type="text" placeholder="Rua" [(ngModel)]="cliente.endereco.logradouro"/>
     </div>
     <div class="flex flex-col">
       <label class="form-label">Número</label>
-      <input name="numero" class="input" type="text" placeholder="N°" />
+      <input name="numero" class="input" type="text" placeholder="N°" [(ngModel)]="cliente.endereco.numero" />
     </div>
   </div>
 
   <div class="grid gap-4 grid-cols-4 mb-5">
     <div class="flex flex-col">
       <label class="form-label">Complemento</label>
-      <input name="complemento" class="input" type="text" placeholder="Complemento" />
+      <input name="complemento" class="input" type="text" placeholder="Complemento" [(ngModel)]="cliente.endereco.complemento" />
     </div>
     <div class="flex flex-col">
       <label class="form-label">Bairro</label>
-      <input name="bairro" class="input" type="text" placeholder="Bairro" />
+      <input name="bairro" class="input" type="text" placeholder="Bairro" [(ngModel)]="cliente.endereco.bairro" />
     </div>
     <div class="flex flex-col">
       <label class="form-label">Cidade</label>
-      <input name="cidade" class="input" type="text" placeholder="Cidade" />
+      <input name="cidade" class="input" type="text" placeholder="Cidade" [(ngModel)]="cliente.endereco.cidade" />
     </div>
     <div class="flex flex-col">
       <label class="form-label">UF:</label>
-      <select class="input" aria-label="Default select example" name="uf">
+      <select class="input" aria-label="Default select example" name="uf" [(ngModel)]="cliente.endereco.uf">
         <option value="" selected disabled>Selecione a UF</option>
         <option value="AC">Acre (AC)</option>
         <option value="AL">Alagoas (AL)</option>

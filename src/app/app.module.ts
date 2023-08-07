@@ -10,6 +10,11 @@ import { FormularioClienteComponent } from './components/formulario/formulario-c
 import { FormularioPessoaFisicaComponent } from './components/formulario/formulario-pessoa-fisica/formulario-pessoa-fisica.component';
 import { FormularioPessoaJuridicaComponent } from './components/formulario/formulario-pessoa-juridica/formulario-pessoa-juridica.component';
 import { FormularioOrcamentoComponent } from './components/formulario/formulario-orcamento/formulario-orcamento.component';
+import { ListarProdutosComponent } from './components/listar-produtos/listar-produtos.component';
+
+import { ClienteTrComponent } from './components/listar-clientes/cliente-tr/cliente-tr.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,15 @@ import { FormularioOrcamentoComponent } from './components/formulario/formulario
     FormularioClienteComponent,
     FormularioPessoaFisicaComponent,
     FormularioPessoaJuridicaComponent,
-    FormularioOrcamentoComponent
+    FormularioOrcamentoComponent,
+    ListarProdutosComponent,
+    ClienteTrComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

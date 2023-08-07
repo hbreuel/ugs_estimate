@@ -4,6 +4,7 @@ import { ListarClientesComponent } from './components/listar-clientes/listar-cli
 import { ListarOrcamentosComponent } from './components/listar-orcamentos/listar-orcamentos.component';
 import { FormularioClienteComponent } from './components/formulario/formulario-cliente/formulario-cliente.component';
 import { FormularioOrcamentoComponent } from './components/formulario/formulario-orcamento/formulario-orcamento.component';
+import { ListarProdutosComponent } from './components/listar-produtos/listar-produtos.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: "gerarOrcamento",
     component: FormularioOrcamentoComponent
+  },
+  {
+    path: "produtos",
+    component: ListarProdutosComponent
   }
   
   

@@ -15,6 +15,9 @@ import { ListarProdutosComponent } from './components/listar-produtos/listar-pro
 import { ClienteTrComponent } from './components/listar-clientes/cliente-tr/cliente-tr.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DialogExclusaoComponent } from './components/dialog/dialog-exclusao/dialog-exclusao.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -27,13 +30,18 @@ import { FormsModule } from '@angular/forms';
     FormularioPessoaJuridicaComponent,
     FormularioOrcamentoComponent,
     ListarProdutosComponent,
-    ClienteTrComponent
+    ClienteTrComponent,
+    DialogExclusaoComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

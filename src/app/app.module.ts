@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemplateComponent } from './components/template/template.component';
@@ -12,11 +13,14 @@ import { FormularioPessoaJuridicaComponent } from './components/formulario/formu
 import { FormularioOrcamentoComponent } from './components/formulario/formulario-orcamento/formulario-orcamento.component';
 import { ListarProdutosComponent } from './components/listar-produtos/listar-produtos.component';
 
-import { ClienteTrComponent } from './components/listar-clientes/cliente-tr/cliente-tr.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DialogExclusaoComponent } from './components/dialog/dialog-exclusao/dialog-exclusao.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { MatDialogModule } from '@angular/material';
+
+
+
 
 
 @NgModule({
@@ -30,8 +34,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     FormularioPessoaJuridicaComponent,
     FormularioOrcamentoComponent,
     ListarProdutosComponent,
-    ClienteTrComponent,
     DialogExclusaoComponent,
+    
 
 
   ],
@@ -40,7 +44,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    MatAutocompleteModule,
     MatDialogModule
+
+
    
   ],
   providers: [],

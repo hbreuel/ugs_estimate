@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OrcamentosService } from './orcamentos.service';
+import { Orcamento } from './orcamento';
 
 @Component({
   selector: 'app-listar-orcamentos',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarOrcamentosComponent implements OnInit {
 
-  constructor() { }
+  listaOrcamentos : Orcamento[] = []
+
+  constructor(private service: OrcamentosService) { }
 
   ngOnInit(): void {
+    this.service.listar().subscribe((listaOrcamentos) => {
+      this.listaOrcamentos = listaOrcamentos
+    })
   }
 
 }
